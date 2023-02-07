@@ -1,10 +1,8 @@
 name: "Test template workflow"
 description: ""
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: echo Hello from Octo Organization
+runs:
+  using: "composite"
+  steps:
+    - name: Run a one-line script
+      run: echo Hello from template-workflow
