@@ -1,8 +1,7 @@
 name: "Test template workflow"
-description: ""
+description: "test template"
 
 runs:
   using: "composite"
   steps:
-    - name: Run a one-line script
-      run: echo Hello from template-workflow
+     - run: echo Hello from template-workflow
